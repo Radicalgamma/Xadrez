@@ -1,6 +1,6 @@
 ﻿using System;
 using tabuleiro;
-
+using xadrez;
 
 namespace Projeto_Xadres
 {
@@ -27,6 +27,17 @@ namespace Projeto_Xadres
             }
             Console.WriteLine(" a b c e d f g h");
         }
+        public static PosicaoXadrez lerPosicaoXadrez() { 
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
+        }
+
+
+
+
+
         public static void imprimirPeca(Peca peca)
         {
             if (peca.cor == Cor.Branca)
