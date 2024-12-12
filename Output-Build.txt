@@ -1,0 +1,9 @@
+﻿Build started at 19:20...
+1>------ Build started: Project: Projeto Xadres, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>C:\Users\DUDU\Desktop\Softwares\Softwares de Programação\VS CODE\Projetos VS\Projeto Xadres\xadrez\PartidaDeXadrez.cs(9,21,9,33): warning CS0414: The field 'PartidaDeXadrez.jogadorAtual' is assigned but its value is never used
+1>C:\Users\DUDU\Desktop\Softwares\Softwares de Programação\VS CODE\Projetos VS\Projeto Xadres\xadrez\PartidaDeXadrez.cs(8,21,8,26): warning CS0414: The field 'PartidaDeXadrez.turno' is assigned but its value is never used
+1>Projeto Xadres -> C:\Users\DUDU\Desktop\Softwares\Softwares de Programação\VS CODE\Projetos VS\Projeto Xadres\bin\Debug\net8.0\Projeto Xadres.dll
+1>Done building project "Projeto Xadres.csproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 19:20 and took 00,459 seconds ==========

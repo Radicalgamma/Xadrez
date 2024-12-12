@@ -13,20 +13,13 @@ namespace Projeto_Xadres
                 Console.Write(8 - i + " ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
-                    if (tab.peca(i, j) == null)
-                    {
-                        Console.Write("- ");
-                    }
-                    else
-                    {
-                        imprimirPeca(tab.peca(i,j));
-                        Console.Write(" ");
-                    }
+                    imprimirPeca(tab.peca(i, j));
                 }
                 Console.WriteLine();
             }
             Console.WriteLine(" a b c e d f g h");
         }
+        
         public static PosicaoXadrez lerPosicaoXadrez() { 
             string s = Console.ReadLine();
             char coluna = s[0];
@@ -40,16 +33,27 @@ namespace Projeto_Xadres
 
         public static void imprimirPeca(Peca peca)
         {
-            if (peca.cor == Cor.Branca)
+
+            if (peca == null)
             {
-                Console.Write(peca);
+                Console.Write("- ");
             }
-            else {
-                ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write(peca);
-                Console.ForegroundColor = aux;
+            else
+            {
+                if (peca.cor == Cor.Branca) { Console.Write(peca); }
+
+                else
+                {
+                    ConsoleColor aux = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write(peca);
+                    Console.ForegroundColor = aux;
+                }
             }
+
+            Console.Write(" ");
+
+
         }
     }
 }
